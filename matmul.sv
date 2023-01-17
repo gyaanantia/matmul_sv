@@ -16,5 +16,5 @@ module matmul()
     output  logic [DATA_WIDTH-1:0]  z_din,
     output  logic [ADDR_WIDTH-1:0]  z_addr,
     output  logic                   z_wr_en
-)
+);
 endmodule
