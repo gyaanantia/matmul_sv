@@ -1,0 +1,29 @@
+/home/gfa2226/fpga/matmul/matmul_top.sv {1 {vlog -work work -vopt -sv -stats=none /home/gfa2226/fpga/matmul/matmul_top.sv
+QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+-- Compiling module matmul_top
+
+Top level modules:
+	matmul_top
+
+} {} {}} /home/gfa2226/fpga/matmul/bram.sv {1 {vlog -work work -vopt -sv -stats=none /home/gfa2226/fpga/matmul/bram.sv
+QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+-- Compiling module bram
+
+Top level modules:
+	bram
+
+} {} {}} /home/gfa2226/fpga/matmul/matmul.sv {1 {vlog -work work -vopt -sv -stats=none /home/gfa2226/fpga/matmul/matmul.sv
+QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+-- Compiling module matmul
+
+Top level modules:
+	matmul
+
+} {} {}} /home/gfa2226/fpga/matmul/bram_block.sv {1 {vlog -work work -vopt -sv -stats=none /home/gfa2226/fpga/matmul/bram_block.sv
+QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+-- Compiling module bram_block
+
+Top level modules:
+	bram_block
+
+} {} {}}

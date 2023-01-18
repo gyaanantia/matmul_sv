@@ -1,9 +1,9 @@
-module matmul()
+module matmul
 #(
     parameter DATA_WIDTH = 32,
-    parameter ADDR_WIDTH = 6,
-    parameter VECTOR_SIZE = 8,
-    parameter IDX_SIZE = 3
+    parameter ADDR_WIDTH = 12,
+    parameter VECTOR_SIZE = 64,
+    parameter IDX_SIZE = 6
 )
 (
     input   logic                   clock,
@@ -45,6 +45,8 @@ always_ff @(posedge clock or posedge reset) begin
 end
 
 always_comb begin
+    // x_addr = ($unsigned(i_c) * $unsigned(VECTOR_SIZE)) + $unsigned(k_c);
+    // y_addr = ($unsigned(k_c) * $unsigned(VECTOR_SIZE)) + $unsigned(j_c);
     x_addr = 'b0;
     y_addr = 'b0;
     z_addr = 'b0;
@@ -69,27 +71,31 @@ always_comb begin
             end
         end
         s1: begin
-            x_addr = ($unsigned(i) * VECTOR_SIZE) + $unsigned(k);
-            y_addr = ($unsigned(k) * VECTOR_SIZE) + $unsigned(j);
+            x_addr = ($unsigned(i_c) * $unsigned(VECTOR_SIZE)) + $unsigned(k_c);
+            y_addr = ($unsigned(k_c) * $unsigned(VECTOR_SIZE)) + $unsigned(j_c);
             state_c = s2; 
         end
         s2: begin
-            x_addr = ($unsigned(i) * VECTOR_SIZE) + $unsigned(k);
-            y_addr = ($unsigned(k) * VECTOR_SIZE) + $unsigned(j);
-            sum_c = sum + ($unsigned(x_dout) * $unsigned(y_dout));
+            sum_c = (sum + ($unsigned(x_dout) * $unsigned(y_dout)));
             k_c = k + 1;
         
-            if ($unsigned(k) == VECTOR_SIZE - 1) begin
+            if ($unsigned(k) == $unsigned(VECTOR_SIZE) - 1) begin
                 k_c = '0;
                 state_c = s3;
             end else begin
                 state_c = s2;
             end
+            
+            x_addr = ($unsigned(i_c) * $unsigned(VECTOR_SIZE)) + $unsigned(k_c);
+            y_addr = ($unsigned(k_c) * $unsigned(VECTOR_SIZE)) + $unsigned(j_c);
         end
         s3: begin
             z_din = sum;
-            z_addr = ($unsigned(i) * VECTOR_SIZE) + $unsigned(j);
+            z_addr = ($unsigned(i) * $unsigned(VECTOR_SIZE)) + $unsigned(j);
             z_wr_en = 1'b1;
+
+            sum_c = '0;
+            state_c = s1;
 
             if ($unsigned(j) == $unsigned(VECTOR_SIZE) - 1 && $unsigned(i) == $unsigned(VECTOR_SIZE) - 1) begin
                 done_c = 1'b1;
@@ -100,10 +106,7 @@ always_comb begin
             end else begin
                 j_c = j + 1;
                 i_c = i;
-            end
-            
-            sum_c = '0;
-            state_c = s1;
+            end   
 
         end
 

@@ -1,0 +1,145 @@
+m255
+K4
+z2
+!s11f vlog 2019.3_2 2019.09, Sep 24 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/gfa2226/fpga/fibonacci
+T_opt
+!s110 1674037529
+V]N0O1ZJfMH0SI17cSI8a10
+04 9 4 work matmul_tb fast 0
+=6-000ae431a4f1-63c7c919-ab3a9-193091
+o-quiet -auto_acc_if_foreign -work work +acc
+Z0 tCvgOpt 0
+n@_opt
+OE;O;2019.3_2;69
+vbram
+Z1 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z2 !s110 1674037525
+!i10b 1
+!s100 68Hgl<oje71L=YRL^Al[d2
+!s11b OJfT`fjUoze]Y:D7gDhYd0
+I`<71gC:HJJV9VzaYUcJ[>1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+Z4 d/home/gfa2226/fpga/matmul/sim
+w1674032745
+8/home/gfa2226/fpga/matmul/bram.sv
+F/home/gfa2226/fpga/matmul/bram.sv
+!i122 -1
+L0 1
+Z5 OE;L;2019.3_2;69
+r1
+!s85 0
+31
+Z6 !s108 1674037525.000000
+!s107 /home/gfa2226/fpga/matmul/bram.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/home/gfa2226/fpga/matmul/bram.sv|
+!i113 0
+Z7 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R0
+vbram_block
+R1
+R2
+!i10b 1
+!s100 V7HcOU>@o5C@j6EXDU:jm3
+!s11b O34GJE5H1THedNKAVjNEV2
+Iae0EzMbo;6Fm:K_dI0hMQ2
+R3
+S1
+R4
+w1641926117
+8/home/gfa2226/fpga/matmul/bram_block.sv
+F/home/gfa2226/fpga/matmul/bram_block.sv
+!i122 -1
+L0 2
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/gfa2226/fpga/matmul/bram_block.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/home/gfa2226/fpga/matmul/bram_block.sv|
+!i113 0
+R7
+R0
+vmatmul
+R1
+R2
+!i10b 1
+!s100 e=dV6FBCZBL4=JYQ8DN8H3
+!s11b O1zn7;m<naGNUT0bH8ZO63
+I^bR_iHcE0>zZ:e<IX]]AV2
+R3
+S1
+R4
+w1674037422
+8/home/gfa2226/fpga/matmul/matmul.sv
+F/home/gfa2226/fpga/matmul/matmul.sv
+!i122 -1
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/gfa2226/fpga/matmul/matmul.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/home/gfa2226/fpga/matmul/matmul.sv|
+!i113 0
+R7
+R0
+vmatmul_tb
+R1
+R2
+!i10b 1
+!s100 b:gS30WI>lVH:>:WYN64:3
+!s11b UkBiA;Re>T^ZF^QEoGFfm3
+IKf<mdZBQ26XPkgG5<@]dC1
+R3
+S1
+R4
+w1674037521
+8/home/gfa2226/fpga/matmul/matmul_tb.sv
+F/home/gfa2226/fpga/matmul/matmul_tb.sv
+!i122 -1
+L0 3
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/gfa2226/fpga/matmul/matmul_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/home/gfa2226/fpga/matmul/matmul_tb.sv|
+!i113 0
+R7
+R0
+vmatmul_top
+R1
+R2
+!i10b 1
+!s100 g_oMLb[9V^RYfd3Ad^3gH2
+!s11b j_3JZ;VAaFGORO;gD=2=`1
+IZ1OSVlPOk;Joi?5=52@4`2
+R3
+S1
+R4
+w1674037457
+8/home/gfa2226/fpga/matmul/matmul_top.sv
+F/home/gfa2226/fpga/matmul/matmul_top.sv
+!i122 -1
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/gfa2226/fpga/matmul/matmul_top.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/home/gfa2226/fpga/matmul/matmul_top.sv|
+!i113 0
+R7
+R0

@@ -16,6 +16,6 @@ module bram
   always_ff @(posedge clock) begin
     read_addr <= rd_addr;
     if (wr_en) mem[wr_addr] <= din; 
-  end
+  end
 
 endmodule
