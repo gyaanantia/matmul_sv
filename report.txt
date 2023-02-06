@@ -1,0 +1,17 @@
+clock cycles: 643
+LUTs for combinational functions (total_luts): 199
+I/O Pins: 119
+DSP Blocks (dsp_used): 3 (15)
+Non I/O Registers (non_io_reg): 44
+I/O registers (total_io_reg): 0
+Memory Bits: 0
+
+ATOMS: 139
+ARITHMETIC MODE: 0
+REGISTERS: 44
+SYNC RAMS: 0
+MACs: 6
+
+Req Freq: 220.7 MHz
+Est Freq: 187.6 MHz
+Slack: -0.800

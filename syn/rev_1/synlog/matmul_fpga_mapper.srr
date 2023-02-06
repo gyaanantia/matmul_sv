@@ -1,0 +1,965 @@
+# Wed Jan 18 04:37:59 2023
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify (R) Premier
+Build: O-2018.09-SP1
+Install: /vol/synopsys/fpga/O-2018.09-SP1
+OS: Red Hat Enterprise Linux 8.7 (Ootpa)
+Hostname: joker.ece.northwestern.edu
+max virtual memory: unlimited (bytes)
+max user processes: 62381
+max stack size: 8388608 (bytes)
+
+
+Implementation : rev_1
+Synopsys Intel FPGA Technology Mapper, Version maprc, Build 4745R, Built Nov 27 2018 21:14:52
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 99MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MF915 |Option synthesis_strategy=advanced is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+@W: FA406 |Environment variable QUARTUS_ROOTDIR not set. Cannot determine PAR version.
+@N: MF284 |Setting synthesis effort to medium for the design
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 117MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Auto Constrain mode is enabled
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 117MB)
+
+@N: MO231 :"/home/gfa2226/fpga/matmul/matmul.sv":29:0:29:8|Found counter in view:work.matmul(verilog) instance j[5:0] 
+@N: MO231 :"/home/gfa2226/fpga/matmul/matmul.sv":29:0:29:8|Found counter in view:work.matmul(verilog) instance i[5:0] 
+Encoding state machine state[3:0] (in view: work.matmul(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"/home/gfa2226/fpga/matmul/matmul.sv":29:0:29:8|There are no possible illegal states for state machine state[3:0] (in view: work.matmul(verilog)); safe FSM implementation is not required.
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 118MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 118MB)
+
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 118MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 118MB peak: 118MB)
+
+
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 118MB peak: 121MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 118MB peak: 121MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 121MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 121MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 121MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 121MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 121MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 121MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 121MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 123MB peak: 126MB)
+
+@N: FA100 :"/home/gfa2226/fpga/matmul/matmul.sv":29:0:29:8|Instance "state[0]" with "146" loads has been replicated "4" time(s) due to hard fanout limit of "30" 
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 124MB peak: 126MB)
+
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 124MB peak: 126MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 57 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+=========================== Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
+---------------------------------------------------------------------------------------
+@K:CKID0001       clock_in            cycloneive_io_ibuf     57         state_rep2[0]  
+=======================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 126MB)
+
+Writing Analyst data base /home/gfa2226/fpga/matmul/syn/rev_1/synwork/matmul_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 121MB peak: 126MB)
+
+Writing Verilog Netlist and constraint files
+Writing .vqm output for Quartus
+
+Writing scf file... (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 123MB peak: 126MB)
+
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+Writing FDC file /home/gfa2226/fpga/matmul/syn/rev_1/matmul_synplify.fdc
+
+Finished Writing Verilog Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 121MB peak: 126MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 123MB peak: 126MB)
+
+@W: MT420 |Found inferred clock matmul|clock with period 4.53ns. Please declare a user-defined clock on port clock.
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Wed Jan 18 04:38:00 2023
+#
+
+
+Top view:               matmul
+Requested Frequency:    220.7 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: -0.800
+
+                   Requested     Estimated     Requested     Estimated                Clock        Clock                
+Starting Clock     Frequency     Frequency     Period        Period        Slack      Type         Group                
+------------------------------------------------------------------------------------------------------------------------
+matmul|clock       220.7 MHz     187.6 MHz     4.531         5.331         -0.800     inferred     Autoconstr_clkgroup_0
+========================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                      |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+-------------------------------------------------------------------------------------------------------------------
+Starting      Ending        |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+-------------------------------------------------------------------------------------------------------------------
+matmul|clock  matmul|clock  |  4.531       -0.800  |  No paths    -      |  No paths    -      |  No paths    -    
+===================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: matmul|clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+             Starting                                       Arrival           
+Instance     Reference        Type       Pin     Net        Time        Slack 
+             Clock                                                            
+------------------------------------------------------------------------------
+sum[0]       matmul|clock     dffeas     q       sum[0]     0.845       -0.800
+sum[1]       matmul|clock     dffeas     q       sum[1]     0.845       -0.734
+sum[2]       matmul|clock     dffeas     q       sum[2]     0.845       -0.668
+sum[3]       matmul|clock     dffeas     q       sum[3]     0.845       -0.602
+sum[4]       matmul|clock     dffeas     q       sum[4]     0.845       -0.536
+sum[5]       matmul|clock     dffeas     q       sum[5]     0.845       -0.470
+sum[6]       matmul|clock     dffeas     q       sum[6]     0.845       -0.404
+sum[7]       matmul|clock     dffeas     q       sum[7]     0.845       -0.338
+sum[8]       matmul|clock     dffeas     q       sum[8]     0.845       -0.272
+sum[9]       matmul|clock     dffeas     q       sum[9]     0.845       -0.206
+==============================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+             Starting                                               Required           
+Instance     Reference        Type       Pin     Net                Time         Slack 
+             Clock                                                                     
+---------------------------------------------------------------------------------------
+sum[31]      matmul|clock     dffeas     d       sum_1_0_31__g2     5.058        -0.800
+sum[30]      matmul|clock     dffeas     d       sum_1_0_30__g2     5.058        -0.734
+sum[29]      matmul|clock     dffeas     d       sum_1_0_29__g2     5.058        -0.668
+sum[28]      matmul|clock     dffeas     d       sum_1_0_28__g2     5.058        -0.602
+sum[27]      matmul|clock     dffeas     d       sum_1_0_27__g2     5.058        -0.536
+sum[26]      matmul|clock     dffeas     d       sum_1_0_26__g2     5.058        -0.470
+sum[25]      matmul|clock     dffeas     d       sum_1_0_25__g2     5.058        -0.404
+sum[24]      matmul|clock     dffeas     d       sum_1_0_24__g2     5.058        -0.338
+sum[23]      matmul|clock     dffeas     d       sum_1_0_23__g2     5.058        -0.272
+sum[22]      matmul|clock     dffeas     d       sum_1_0_22__g2     5.058        -0.206
+=======================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      4.531
+    - Setup time:                            0.086
+    + Intrinsic clock delay:                 0.613
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         5.058
+
+    - Propagation time:                      5.245
+    - Intrinsic clock delay:                 0.613
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.800
+
+    Number of logic level(s):                34
+    Starting point:                          sum[0] / q
+    Ending point:                            sum[31] / d
+    The start point is clocked by            matmul|clock [rising] on pin clk
+    The end   point is clocked by            matmul|clock [rising] on pin clk
+
+Instance / Net                                       Pin         Pin               Arrival     No. of    
+Name                       Type                      Name        Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------
+sum[0]                     dffeas                    q           Out     0.232     0.845       -         
+sum[0]                     Net                       -           -       0.340     -           3         
+un2_sum_c_0_add0_0         cycloneive_lcell_comb     datab       In      -         1.185       -         
+un2_sum_c_0_add0_0         cycloneive_lcell_comb     cout        Out     0.509     1.694       -         
+un2_sum_c_0_carry_0_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add1_0         cycloneive_lcell_comb     cin         In      -         1.694       -         
+un2_sum_c_0_add1_0         cycloneive_lcell_comb     cout        Out     0.066     1.760       -         
+un2_sum_c_0_carry_1_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add2_0         cycloneive_lcell_comb     cin         In      -         1.760       -         
+un2_sum_c_0_add2_0         cycloneive_lcell_comb     cout        Out     0.066     1.826       -         
+un2_sum_c_0_carry_2_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add3_0         cycloneive_lcell_comb     cin         In      -         1.826       -         
+un2_sum_c_0_add3_0         cycloneive_lcell_comb     cout        Out     0.066     1.892       -         
+un2_sum_c_0_carry_3_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add4_0         cycloneive_lcell_comb     cin         In      -         1.892       -         
+un2_sum_c_0_add4_0         cycloneive_lcell_comb     cout        Out     0.066     1.958       -         
+un2_sum_c_0_carry_4_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add5_0         cycloneive_lcell_comb     cin         In      -         1.958       -         
+un2_sum_c_0_add5_0         cycloneive_lcell_comb     cout        Out     0.066     2.024       -         
+un2_sum_c_0_carry_5_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add6_0         cycloneive_lcell_comb     cin         In      -         2.024       -         
+un2_sum_c_0_add6_0         cycloneive_lcell_comb     cout        Out     0.066     2.090       -         
+un2_sum_c_0_carry_6_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add7_0         cycloneive_lcell_comb     cin         In      -         2.090       -         
+un2_sum_c_0_add7_0         cycloneive_lcell_comb     cout        Out     0.066     2.156       -         
+un2_sum_c_0_carry_7_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add8_0         cycloneive_lcell_comb     cin         In      -         2.156       -         
+un2_sum_c_0_add8_0         cycloneive_lcell_comb     cout        Out     0.066     2.222       -         
+un2_sum_c_0_carry_8_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add9_0         cycloneive_lcell_comb     cin         In      -         2.222       -         
+un2_sum_c_0_add9_0         cycloneive_lcell_comb     cout        Out     0.066     2.288       -         
+un2_sum_c_0_carry_9_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add10_0        cycloneive_lcell_comb     cin         In      -         2.288       -         
+un2_sum_c_0_add10_0        cycloneive_lcell_comb     cout        Out     0.066     2.354       -         
+un2_sum_c_0_carry_10_0     Net                       -           -       0.000     -           1         
+un2_sum_c_0_add11_0        cycloneive_lcell_comb     cin         In      -         2.354       -         
+un2_sum_c_0_add11_0        cycloneive_lcell_comb     cout        Out     0.066     2.420       -         
+un2_sum_c_0_carry_11_0     Net                       -           -       0.000     -           1         
+un2_sum_c_0_add12_0        cycloneive_lcell_comb     cin         In      -         2.420       -         
+un2_sum_c_0_add12_0        cycloneive_lcell_comb     cout        Out     0.066     2.486       -         
+un2_sum_c_0_carry_12_0     Net                       -           -       0.000     -           1         
+un2_sum_c_0_add13_0        cycloneive_lcell_comb     cin         In      -         2.486       -         
+un2_sum_c_0_add13_0        cycloneive_lcell_comb     cout        Out     0.066     2.552       -         
+un2_sum_c_0_carry_13_0     Net                       -           -       0.000     -           1         
+un2_sum_c_0_add14          cycloneive_lcell_comb     cin         In      -         2.552       -         
+un2_sum_c_0_add14          cycloneive_lcell_comb     cout        Out     0.066     2.618       -         
+un2_sum_c_0_carry_14       Net                       -           -       0.000     -           1         
+un2_sum_c_0_add15          cycloneive_lcell_comb     cin         In      -         2.618       -         
+un2_sum_c_0_add15          cycloneive_lcell_comb     cout        Out     0.066     2.684       -         
+un2_sum_c_0_carry_15       Net                       -           -       0.000     -           1         
+un2_sum_c_0_add16          cycloneive_lcell_comb     cin         In      -         2.684       -         
+un2_sum_c_0_add16          cycloneive_lcell_comb     cout        Out     0.066     2.750       -         
+un2_sum_c_0_carry_16       Net                       -           -       0.000     -           1         
+un2_sum_c_0_add17          cycloneive_lcell_comb     cin         In      -         2.750       -         
+un2_sum_c_0_add17          cycloneive_lcell_comb     cout        Out     0.066     2.816       -         
+un2_sum_c_0_carry_17       Net                       -           -       0.000     -           1         
+un2_sum_c_0_add18          cycloneive_lcell_comb     cin         In      -         2.816       -         
+un2_sum_c_0_add18          cycloneive_lcell_comb     cout        Out     0.066     2.882       -         
+un2_sum_c_0_carry_18       Net                       -           -       0.000     -           1         
+un2_sum_c_0_add19          cycloneive_lcell_comb     cin         In      -         2.882       -         
+un2_sum_c_0_add19          cycloneive_lcell_comb     cout        Out     0.066     2.948       -         
+un2_sum_c_0_carry_19       Net                       -           -       0.000     -           1         
+un2_sum_c_0_add20          cycloneive_lcell_comb     cin         In      -         2.948       -         
+un2_sum_c_0_add20          cycloneive_lcell_comb     cout        Out     0.066     3.014       -         
+un2_sum_c_0_carry_20       Net                       -           -       0.000     -           1         
+un2_sum_c_0_add21          cycloneive_lcell_comb     cin         In      -         3.014       -         
+un2_sum_c_0_add21          cycloneive_lcell_comb     cout        Out     0.066     3.080       -         
+un2_sum_c_0_carry_21       Net                       -           -       0.000     -           1         
+un2_sum_c_0_add22          cycloneive_lcell_comb     cin         In      -         3.080       -         
+un2_sum_c_0_add22          cycloneive_lcell_comb     cout        Out     0.066     3.146       -         
+un2_sum_c_0_carry_22       Net                       -           -       0.000     -           1         
+un2_sum_c_0_add23          cycloneive_lcell_comb     cin         In      -         3.146       -         
+un2_sum_c_0_add23          cycloneive_lcell_comb     cout        Out     0.066     3.212       -         
+un2_sum_c_0_carry_23       Net                       -           -       0.000     -           1         
+un2_sum_c_0_add24          cycloneive_lcell_comb     cin         In      -         3.212       -         
+un2_sum_c_0_add24          cycloneive_lcell_comb     cout        Out     0.066     3.278       -         
+un2_sum_c_0_carry_24       Net                       -           -       0.000     -           1         
+un2_sum_c_0_add25          cycloneive_lcell_comb     cin         In      -         3.278       -         
+un2_sum_c_0_add25          cycloneive_lcell_comb     cout        Out     0.066     3.344       -         
+un2_sum_c_0_carry_25       Net                       -           -       0.000     -           1         
+un2_sum_c_0_add26          cycloneive_lcell_comb     cin         In      -         3.344       -         
+un2_sum_c_0_add26          cycloneive_lcell_comb     cout        Out     0.066     3.410       -         
+un2_sum_c_0_carry_26       Net                       -           -       0.000     -           1         
+un2_sum_c_0_add27          cycloneive_lcell_comb     cin         In      -         3.410       -         
+un2_sum_c_0_add27          cycloneive_lcell_comb     cout        Out     0.066     3.476       -         
+un2_sum_c_0_carry_27       Net                       -           -       0.000     -           1         
+un2_sum_c_0_add28          cycloneive_lcell_comb     cin         In      -         3.476       -         
+un2_sum_c_0_add28          cycloneive_lcell_comb     cout        Out     0.066     3.542       -         
+un2_sum_c_0_carry_28       Net                       -           -       0.000     -           1         
+un2_sum_c_0_add29          cycloneive_lcell_comb     cin         In      -         3.542       -         
+un2_sum_c_0_add29          cycloneive_lcell_comb     cout        Out     0.066     3.608       -         
+un2_sum_c_0_carry_29       Net                       -           -       0.000     -           1         
+un2_sum_c_0_add30          cycloneive_lcell_comb     cin         In      -         3.608       -         
+un2_sum_c_0_add30          cycloneive_lcell_comb     cout        Out     0.066     3.674       -         
+un2_sum_c_0_carry_30       Net                       -           -       0.000     -           1         
+un2_sum_c_0_add31          cycloneive_lcell_comb     cin         In      -         3.674       -         
+un2_sum_c_0_add31          cycloneive_lcell_comb     combout     Out     0.000     3.674       -         
+un2_sum_c_0_add31          Net                       -           -       0.652     -           1         
+un2_sum_c_add13            cycloneive_lcell_comb     dataa       In      -         4.326       -         
+un2_sum_c_add13            cycloneive_lcell_comb     combout     Out     0.437     4.763       -         
+un2_sum_c_add13            Net                       -           -       0.652     -           1         
+sum_RNO[31]                cycloneive_lcell_comb     datab       In      -         5.415       -         
+sum_RNO[31]                cycloneive_lcell_comb     combout     Out     0.443     5.858       -         
+sum_1_0_31__g2             Net                       -           -       0.000     -           1         
+sum[31]                    dffeas                    d           In      -         5.858       -         
+=========================================================================================================
+Total path delay (propagation time + ICD at startpoint + setup - ICD at endpoint) of 5.331 is 3.687(69.2%) logic and 1.644(30.8%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+*Arrival time includes intrinsic clock delay at start point and clock delay at startpoint
+
+
+Path information for path number 2: 
+      Requested Period:                      4.531
+    - Setup time:                            0.086
+    + Intrinsic clock delay:                 0.613
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         5.058
+
+    - Propagation time:                      5.240
+    - Intrinsic clock delay:                 0.613
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.795
+
+    Number of logic level(s):                34
+    Starting point:                          sum[0] / q
+    Ending point:                            sum[31] / d
+    The start point is clocked by            matmul|clock [rising] on pin clk
+    The end   point is clocked by            matmul|clock [rising] on pin clk
+
+Instance / Net                                       Pin         Pin               Arrival     No. of    
+Name                       Type                      Name        Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------
+sum[0]                     dffeas                    q           Out     0.232     0.845       -         
+sum[0]                     Net                       -           -       0.340     -           3         
+un2_sum_c_0_add0_0         cycloneive_lcell_comb     datab       In      -         1.185       -         
+un2_sum_c_0_add0_0         cycloneive_lcell_comb     cout        Out     0.509     1.694       -         
+un2_sum_c_0_carry_0_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add1_0         cycloneive_lcell_comb     cin         In      -         1.694       -         
+un2_sum_c_0_add1_0         cycloneive_lcell_comb     cout        Out     0.066     1.760       -         
+un2_sum_c_0_carry_1_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add2_0         cycloneive_lcell_comb     cin         In      -         1.760       -         
+un2_sum_c_0_add2_0         cycloneive_lcell_comb     cout        Out     0.066     1.826       -         
+un2_sum_c_0_carry_2_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add3_0         cycloneive_lcell_comb     cin         In      -         1.826       -         
+un2_sum_c_0_add3_0         cycloneive_lcell_comb     cout        Out     0.066     1.892       -         
+un2_sum_c_0_carry_3_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add4_0         cycloneive_lcell_comb     cin         In      -         1.892       -         
+un2_sum_c_0_add4_0         cycloneive_lcell_comb     cout        Out     0.066     1.958       -         
+un2_sum_c_0_carry_4_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add5_0         cycloneive_lcell_comb     cin         In      -         1.958       -         
+un2_sum_c_0_add5_0         cycloneive_lcell_comb     cout        Out     0.066     2.024       -         
+un2_sum_c_0_carry_5_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add6_0         cycloneive_lcell_comb     cin         In      -         2.024       -         
+un2_sum_c_0_add6_0         cycloneive_lcell_comb     cout        Out     0.066     2.090       -         
+un2_sum_c_0_carry_6_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add7_0         cycloneive_lcell_comb     cin         In      -         2.090       -         
+un2_sum_c_0_add7_0         cycloneive_lcell_comb     cout        Out     0.066     2.156       -         
+un2_sum_c_0_carry_7_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add8_0         cycloneive_lcell_comb     cin         In      -         2.156       -         
+un2_sum_c_0_add8_0         cycloneive_lcell_comb     cout        Out     0.066     2.222       -         
+un2_sum_c_0_carry_8_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add9_0         cycloneive_lcell_comb     cin         In      -         2.222       -         
+un2_sum_c_0_add9_0         cycloneive_lcell_comb     cout        Out     0.066     2.288       -         
+un2_sum_c_0_carry_9_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add10_0        cycloneive_lcell_comb     cin         In      -         2.288       -         
+un2_sum_c_0_add10_0        cycloneive_lcell_comb     cout        Out     0.066     2.354       -         
+un2_sum_c_0_carry_10_0     Net                       -           -       0.000     -           1         
+un2_sum_c_0_add11_0        cycloneive_lcell_comb     cin         In      -         2.354       -         
+un2_sum_c_0_add11_0        cycloneive_lcell_comb     cout        Out     0.066     2.420       -         
+un2_sum_c_0_carry_11_0     Net                       -           -       0.000     -           1         
+un2_sum_c_0_add12_0        cycloneive_lcell_comb     cin         In      -         2.420       -         
+un2_sum_c_0_add12_0        cycloneive_lcell_comb     cout        Out     0.066     2.486       -         
+un2_sum_c_0_carry_12_0     Net                       -           -       0.000     -           1         
+un2_sum_c_0_add13_0        cycloneive_lcell_comb     cin         In      -         2.486       -         
+un2_sum_c_0_add13_0        cycloneive_lcell_comb     cout        Out     0.066     2.552       -         
+un2_sum_c_0_carry_13_0     Net                       -           -       0.000     -           1         
+un2_sum_c_0_add14          cycloneive_lcell_comb     cin         In      -         2.552       -         
+un2_sum_c_0_add14          cycloneive_lcell_comb     cout        Out     0.066     2.618       -         
+un2_sum_c_0_carry_14       Net                       -           -       0.000     -           1         
+un2_sum_c_0_add15          cycloneive_lcell_comb     cin         In      -         2.618       -         
+un2_sum_c_0_add15          cycloneive_lcell_comb     cout        Out     0.066     2.684       -         
+un2_sum_c_0_carry_15       Net                       -           -       0.000     -           1         
+un2_sum_c_0_add16          cycloneive_lcell_comb     cin         In      -         2.684       -         
+un2_sum_c_0_add16          cycloneive_lcell_comb     cout        Out     0.066     2.750       -         
+un2_sum_c_0_carry_16       Net                       -           -       0.000     -           1         
+un2_sum_c_0_add17          cycloneive_lcell_comb     cin         In      -         2.750       -         
+un2_sum_c_0_add17          cycloneive_lcell_comb     cout        Out     0.066     2.816       -         
+un2_sum_c_0_carry_17       Net                       -           -       0.000     -           1         
+un2_sum_c_0_add18          cycloneive_lcell_comb     cin         In      -         2.816       -         
+un2_sum_c_0_add18          cycloneive_lcell_comb     combout     Out     0.000     2.816       -         
+un2_sum_c_0_add18          Net                       -           -       0.652     -           1         
+un2_sum_c_add0             cycloneive_lcell_comb     dataa       In      -         3.468       -         
+un2_sum_c_add0             cycloneive_lcell_comb     cout        Out     0.498     3.966       -         
+un2_sum_c_carry_0          Net                       -           -       0.000     -           1         
+un2_sum_c_add1             cycloneive_lcell_comb     cin         In      -         3.966       -         
+un2_sum_c_add1             cycloneive_lcell_comb     cout        Out     0.066     4.032       -         
+un2_sum_c_carry_1          Net                       -           -       0.000     -           1         
+un2_sum_c_add2             cycloneive_lcell_comb     cin         In      -         4.032       -         
+un2_sum_c_add2             cycloneive_lcell_comb     cout        Out     0.066     4.098       -         
+un2_sum_c_carry_2          Net                       -           -       0.000     -           1         
+un2_sum_c_add3             cycloneive_lcell_comb     cin         In      -         4.098       -         
+un2_sum_c_add3             cycloneive_lcell_comb     cout        Out     0.066     4.164       -         
+un2_sum_c_carry_3          Net                       -           -       0.000     -           1         
+un2_sum_c_add4             cycloneive_lcell_comb     cin         In      -         4.164       -         
+un2_sum_c_add4             cycloneive_lcell_comb     cout        Out     0.066     4.230       -         
+un2_sum_c_carry_4          Net                       -           -       0.000     -           1         
+un2_sum_c_add5             cycloneive_lcell_comb     cin         In      -         4.230       -         
+un2_sum_c_add5             cycloneive_lcell_comb     cout        Out     0.066     4.296       -         
+un2_sum_c_carry_5          Net                       -           -       0.000     -           1         
+un2_sum_c_add6             cycloneive_lcell_comb     cin         In      -         4.296       -         
+un2_sum_c_add6             cycloneive_lcell_comb     cout        Out     0.066     4.362       -         
+un2_sum_c_carry_6          Net                       -           -       0.000     -           1         
+un2_sum_c_add7             cycloneive_lcell_comb     cin         In      -         4.362       -         
+un2_sum_c_add7             cycloneive_lcell_comb     cout        Out     0.066     4.428       -         
+un2_sum_c_carry_7          Net                       -           -       0.000     -           1         
+un2_sum_c_add8             cycloneive_lcell_comb     cin         In      -         4.428       -         
+un2_sum_c_add8             cycloneive_lcell_comb     cout        Out     0.066     4.494       -         
+un2_sum_c_carry_8          Net                       -           -       0.000     -           1         
+un2_sum_c_add9             cycloneive_lcell_comb     cin         In      -         4.494       -         
+un2_sum_c_add9             cycloneive_lcell_comb     cout        Out     0.066     4.560       -         
+un2_sum_c_carry_9          Net                       -           -       0.000     -           1         
+un2_sum_c_add10            cycloneive_lcell_comb     cin         In      -         4.560       -         
+un2_sum_c_add10            cycloneive_lcell_comb     cout        Out     0.066     4.626       -         
+un2_sum_c_carry_10         Net                       -           -       0.000     -           1         
+un2_sum_c_add11            cycloneive_lcell_comb     cin         In      -         4.626       -         
+un2_sum_c_add11            cycloneive_lcell_comb     cout        Out     0.066     4.692       -         
+un2_sum_c_carry_11         Net                       -           -       0.000     -           1         
+un2_sum_c_add12            cycloneive_lcell_comb     cin         In      -         4.692       -         
+un2_sum_c_add12            cycloneive_lcell_comb     cout        Out     0.066     4.758       -         
+un2_sum_c_carry_12         Net                       -           -       0.000     -           1         
+un2_sum_c_add13            cycloneive_lcell_comb     cin         In      -         4.758       -         
+un2_sum_c_add13            cycloneive_lcell_comb     combout     Out     0.000     4.758       -         
+un2_sum_c_add13            Net                       -           -       0.652     -           1         
+sum_RNO[31]                cycloneive_lcell_comb     datab       In      -         5.410       -         
+sum_RNO[31]                cycloneive_lcell_comb     combout     Out     0.443     5.853       -         
+sum_1_0_31__g2             Net                       -           -       0.000     -           1         
+sum[31]                    dffeas                    d           In      -         5.853       -         
+=========================================================================================================
+Total path delay (propagation time + ICD at startpoint + setup - ICD at endpoint) of 5.326 is 3.682(69.1%) logic and 1.644(30.9%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+*Arrival time includes intrinsic clock delay at start point and clock delay at startpoint
+
+
+Path information for path number 3: 
+      Requested Period:                      4.531
+    - Setup time:                            0.086
+    + Intrinsic clock delay:                 0.613
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         5.058
+
+    - Propagation time:                      5.240
+    - Intrinsic clock delay:                 0.613
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.795
+
+    Number of logic level(s):                34
+    Starting point:                          sum[0] / q
+    Ending point:                            sum[31] / d
+    The start point is clocked by            matmul|clock [rising] on pin clk
+    The end   point is clocked by            matmul|clock [rising] on pin clk
+
+Instance / Net                                       Pin         Pin               Arrival     No. of    
+Name                       Type                      Name        Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------
+sum[0]                     dffeas                    q           Out     0.232     0.845       -         
+sum[0]                     Net                       -           -       0.340     -           3         
+un2_sum_c_0_add0_0         cycloneive_lcell_comb     datab       In      -         1.185       -         
+un2_sum_c_0_add0_0         cycloneive_lcell_comb     cout        Out     0.509     1.694       -         
+un2_sum_c_0_carry_0_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add1_0         cycloneive_lcell_comb     cin         In      -         1.694       -         
+un2_sum_c_0_add1_0         cycloneive_lcell_comb     cout        Out     0.066     1.760       -         
+un2_sum_c_0_carry_1_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add2_0         cycloneive_lcell_comb     cin         In      -         1.760       -         
+un2_sum_c_0_add2_0         cycloneive_lcell_comb     cout        Out     0.066     1.826       -         
+un2_sum_c_0_carry_2_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add3_0         cycloneive_lcell_comb     cin         In      -         1.826       -         
+un2_sum_c_0_add3_0         cycloneive_lcell_comb     cout        Out     0.066     1.892       -         
+un2_sum_c_0_carry_3_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add4_0         cycloneive_lcell_comb     cin         In      -         1.892       -         
+un2_sum_c_0_add4_0         cycloneive_lcell_comb     cout        Out     0.066     1.958       -         
+un2_sum_c_0_carry_4_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add5_0         cycloneive_lcell_comb     cin         In      -         1.958       -         
+un2_sum_c_0_add5_0         cycloneive_lcell_comb     cout        Out     0.066     2.024       -         
+un2_sum_c_0_carry_5_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add6_0         cycloneive_lcell_comb     cin         In      -         2.024       -         
+un2_sum_c_0_add6_0         cycloneive_lcell_comb     cout        Out     0.066     2.090       -         
+un2_sum_c_0_carry_6_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add7_0         cycloneive_lcell_comb     cin         In      -         2.090       -         
+un2_sum_c_0_add7_0         cycloneive_lcell_comb     cout        Out     0.066     2.156       -         
+un2_sum_c_0_carry_7_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add8_0         cycloneive_lcell_comb     cin         In      -         2.156       -         
+un2_sum_c_0_add8_0         cycloneive_lcell_comb     cout        Out     0.066     2.222       -         
+un2_sum_c_0_carry_8_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add9_0         cycloneive_lcell_comb     cin         In      -         2.222       -         
+un2_sum_c_0_add9_0         cycloneive_lcell_comb     cout        Out     0.066     2.288       -         
+un2_sum_c_0_carry_9_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add10_0        cycloneive_lcell_comb     cin         In      -         2.288       -         
+un2_sum_c_0_add10_0        cycloneive_lcell_comb     cout        Out     0.066     2.354       -         
+un2_sum_c_0_carry_10_0     Net                       -           -       0.000     -           1         
+un2_sum_c_0_add11_0        cycloneive_lcell_comb     cin         In      -         2.354       -         
+un2_sum_c_0_add11_0        cycloneive_lcell_comb     cout        Out     0.066     2.420       -         
+un2_sum_c_0_carry_11_0     Net                       -           -       0.000     -           1         
+un2_sum_c_0_add12_0        cycloneive_lcell_comb     cin         In      -         2.420       -         
+un2_sum_c_0_add12_0        cycloneive_lcell_comb     cout        Out     0.066     2.486       -         
+un2_sum_c_0_carry_12_0     Net                       -           -       0.000     -           1         
+un2_sum_c_0_add13_0        cycloneive_lcell_comb     cin         In      -         2.486       -         
+un2_sum_c_0_add13_0        cycloneive_lcell_comb     cout        Out     0.066     2.552       -         
+un2_sum_c_0_carry_13_0     Net                       -           -       0.000     -           1         
+un2_sum_c_0_add14          cycloneive_lcell_comb     cin         In      -         2.552       -         
+un2_sum_c_0_add14          cycloneive_lcell_comb     cout        Out     0.066     2.618       -         
+un2_sum_c_0_carry_14       Net                       -           -       0.000     -           1         
+un2_sum_c_0_add15          cycloneive_lcell_comb     cin         In      -         2.618       -         
+un2_sum_c_0_add15          cycloneive_lcell_comb     cout        Out     0.066     2.684       -         
+un2_sum_c_0_carry_15       Net                       -           -       0.000     -           1         
+un2_sum_c_0_add16          cycloneive_lcell_comb     cin         In      -         2.684       -         
+un2_sum_c_0_add16          cycloneive_lcell_comb     cout        Out     0.066     2.750       -         
+un2_sum_c_0_carry_16       Net                       -           -       0.000     -           1         
+un2_sum_c_0_add17          cycloneive_lcell_comb     cin         In      -         2.750       -         
+un2_sum_c_0_add17          cycloneive_lcell_comb     cout        Out     0.066     2.816       -         
+un2_sum_c_0_carry_17       Net                       -           -       0.000     -           1         
+un2_sum_c_0_add18          cycloneive_lcell_comb     cin         In      -         2.816       -         
+un2_sum_c_0_add18          cycloneive_lcell_comb     cout        Out     0.066     2.882       -         
+un2_sum_c_0_carry_18       Net                       -           -       0.000     -           1         
+un2_sum_c_0_add19          cycloneive_lcell_comb     cin         In      -         2.882       -         
+un2_sum_c_0_add19          cycloneive_lcell_comb     combout     Out     0.000     2.882       -         
+un2_sum_c_0_add19          Net                       -           -       0.652     -           1         
+un2_sum_c_add1             cycloneive_lcell_comb     dataa       In      -         3.534       -         
+un2_sum_c_add1             cycloneive_lcell_comb     cout        Out     0.498     4.032       -         
+un2_sum_c_carry_1          Net                       -           -       0.000     -           1         
+un2_sum_c_add2             cycloneive_lcell_comb     cin         In      -         4.032       -         
+un2_sum_c_add2             cycloneive_lcell_comb     cout        Out     0.066     4.098       -         
+un2_sum_c_carry_2          Net                       -           -       0.000     -           1         
+un2_sum_c_add3             cycloneive_lcell_comb     cin         In      -         4.098       -         
+un2_sum_c_add3             cycloneive_lcell_comb     cout        Out     0.066     4.164       -         
+un2_sum_c_carry_3          Net                       -           -       0.000     -           1         
+un2_sum_c_add4             cycloneive_lcell_comb     cin         In      -         4.164       -         
+un2_sum_c_add4             cycloneive_lcell_comb     cout        Out     0.066     4.230       -         
+un2_sum_c_carry_4          Net                       -           -       0.000     -           1         
+un2_sum_c_add5             cycloneive_lcell_comb     cin         In      -         4.230       -         
+un2_sum_c_add5             cycloneive_lcell_comb     cout        Out     0.066     4.296       -         
+un2_sum_c_carry_5          Net                       -           -       0.000     -           1         
+un2_sum_c_add6             cycloneive_lcell_comb     cin         In      -         4.296       -         
+un2_sum_c_add6             cycloneive_lcell_comb     cout        Out     0.066     4.362       -         
+un2_sum_c_carry_6          Net                       -           -       0.000     -           1         
+un2_sum_c_add7             cycloneive_lcell_comb     cin         In      -         4.362       -         
+un2_sum_c_add7             cycloneive_lcell_comb     cout        Out     0.066     4.428       -         
+un2_sum_c_carry_7          Net                       -           -       0.000     -           1         
+un2_sum_c_add8             cycloneive_lcell_comb     cin         In      -         4.428       -         
+un2_sum_c_add8             cycloneive_lcell_comb     cout        Out     0.066     4.494       -         
+un2_sum_c_carry_8          Net                       -           -       0.000     -           1         
+un2_sum_c_add9             cycloneive_lcell_comb     cin         In      -         4.494       -         
+un2_sum_c_add9             cycloneive_lcell_comb     cout        Out     0.066     4.560       -         
+un2_sum_c_carry_9          Net                       -           -       0.000     -           1         
+un2_sum_c_add10            cycloneive_lcell_comb     cin         In      -         4.560       -         
+un2_sum_c_add10            cycloneive_lcell_comb     cout        Out     0.066     4.626       -         
+un2_sum_c_carry_10         Net                       -           -       0.000     -           1         
+un2_sum_c_add11            cycloneive_lcell_comb     cin         In      -         4.626       -         
+un2_sum_c_add11            cycloneive_lcell_comb     cout        Out     0.066     4.692       -         
+un2_sum_c_carry_11         Net                       -           -       0.000     -           1         
+un2_sum_c_add12            cycloneive_lcell_comb     cin         In      -         4.692       -         
+un2_sum_c_add12            cycloneive_lcell_comb     cout        Out     0.066     4.758       -         
+un2_sum_c_carry_12         Net                       -           -       0.000     -           1         
+un2_sum_c_add13            cycloneive_lcell_comb     cin         In      -         4.758       -         
+un2_sum_c_add13            cycloneive_lcell_comb     combout     Out     0.000     4.758       -         
+un2_sum_c_add13            Net                       -           -       0.652     -           1         
+sum_RNO[31]                cycloneive_lcell_comb     datab       In      -         5.410       -         
+sum_RNO[31]                cycloneive_lcell_comb     combout     Out     0.443     5.853       -         
+sum_1_0_31__g2             Net                       -           -       0.000     -           1         
+sum[31]                    dffeas                    d           In      -         5.853       -         
+=========================================================================================================
+Total path delay (propagation time + ICD at startpoint + setup - ICD at endpoint) of 5.326 is 3.682(69.1%) logic and 1.644(30.9%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+*Arrival time includes intrinsic clock delay at start point and clock delay at startpoint
+
+
+Path information for path number 4: 
+      Requested Period:                      4.531
+    - Setup time:                            0.086
+    + Intrinsic clock delay:                 0.613
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         5.058
+
+    - Propagation time:                      5.240
+    - Intrinsic clock delay:                 0.613
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.795
+
+    Number of logic level(s):                34
+    Starting point:                          sum[0] / q
+    Ending point:                            sum[31] / d
+    The start point is clocked by            matmul|clock [rising] on pin clk
+    The end   point is clocked by            matmul|clock [rising] on pin clk
+
+Instance / Net                                       Pin         Pin               Arrival     No. of    
+Name                       Type                      Name        Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------
+sum[0]                     dffeas                    q           Out     0.232     0.845       -         
+sum[0]                     Net                       -           -       0.340     -           3         
+un2_sum_c_0_add0_0         cycloneive_lcell_comb     datab       In      -         1.185       -         
+un2_sum_c_0_add0_0         cycloneive_lcell_comb     cout        Out     0.509     1.694       -         
+un2_sum_c_0_carry_0_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add1_0         cycloneive_lcell_comb     cin         In      -         1.694       -         
+un2_sum_c_0_add1_0         cycloneive_lcell_comb     cout        Out     0.066     1.760       -         
+un2_sum_c_0_carry_1_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add2_0         cycloneive_lcell_comb     cin         In      -         1.760       -         
+un2_sum_c_0_add2_0         cycloneive_lcell_comb     cout        Out     0.066     1.826       -         
+un2_sum_c_0_carry_2_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add3_0         cycloneive_lcell_comb     cin         In      -         1.826       -         
+un2_sum_c_0_add3_0         cycloneive_lcell_comb     cout        Out     0.066     1.892       -         
+un2_sum_c_0_carry_3_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add4_0         cycloneive_lcell_comb     cin         In      -         1.892       -         
+un2_sum_c_0_add4_0         cycloneive_lcell_comb     cout        Out     0.066     1.958       -         
+un2_sum_c_0_carry_4_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add5_0         cycloneive_lcell_comb     cin         In      -         1.958       -         
+un2_sum_c_0_add5_0         cycloneive_lcell_comb     cout        Out     0.066     2.024       -         
+un2_sum_c_0_carry_5_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add6_0         cycloneive_lcell_comb     cin         In      -         2.024       -         
+un2_sum_c_0_add6_0         cycloneive_lcell_comb     cout        Out     0.066     2.090       -         
+un2_sum_c_0_carry_6_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add7_0         cycloneive_lcell_comb     cin         In      -         2.090       -         
+un2_sum_c_0_add7_0         cycloneive_lcell_comb     cout        Out     0.066     2.156       -         
+un2_sum_c_0_carry_7_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add8_0         cycloneive_lcell_comb     cin         In      -         2.156       -         
+un2_sum_c_0_add8_0         cycloneive_lcell_comb     cout        Out     0.066     2.222       -         
+un2_sum_c_0_carry_8_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add9_0         cycloneive_lcell_comb     cin         In      -         2.222       -         
+un2_sum_c_0_add9_0         cycloneive_lcell_comb     cout        Out     0.066     2.288       -         
+un2_sum_c_0_carry_9_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add10_0        cycloneive_lcell_comb     cin         In      -         2.288       -         
+un2_sum_c_0_add10_0        cycloneive_lcell_comb     cout        Out     0.066     2.354       -         
+un2_sum_c_0_carry_10_0     Net                       -           -       0.000     -           1         
+un2_sum_c_0_add11_0        cycloneive_lcell_comb     cin         In      -         2.354       -         
+un2_sum_c_0_add11_0        cycloneive_lcell_comb     cout        Out     0.066     2.420       -         
+un2_sum_c_0_carry_11_0     Net                       -           -       0.000     -           1         
+un2_sum_c_0_add12_0        cycloneive_lcell_comb     cin         In      -         2.420       -         
+un2_sum_c_0_add12_0        cycloneive_lcell_comb     cout        Out     0.066     2.486       -         
+un2_sum_c_0_carry_12_0     Net                       -           -       0.000     -           1         
+un2_sum_c_0_add13_0        cycloneive_lcell_comb     cin         In      -         2.486       -         
+un2_sum_c_0_add13_0        cycloneive_lcell_comb     cout        Out     0.066     2.552       -         
+un2_sum_c_0_carry_13_0     Net                       -           -       0.000     -           1         
+un2_sum_c_0_add14          cycloneive_lcell_comb     cin         In      -         2.552       -         
+un2_sum_c_0_add14          cycloneive_lcell_comb     cout        Out     0.066     2.618       -         
+un2_sum_c_0_carry_14       Net                       -           -       0.000     -           1         
+un2_sum_c_0_add15          cycloneive_lcell_comb     cin         In      -         2.618       -         
+un2_sum_c_0_add15          cycloneive_lcell_comb     cout        Out     0.066     2.684       -         
+un2_sum_c_0_carry_15       Net                       -           -       0.000     -           1         
+un2_sum_c_0_add16          cycloneive_lcell_comb     cin         In      -         2.684       -         
+un2_sum_c_0_add16          cycloneive_lcell_comb     cout        Out     0.066     2.750       -         
+un2_sum_c_0_carry_16       Net                       -           -       0.000     -           1         
+un2_sum_c_0_add17          cycloneive_lcell_comb     cin         In      -         2.750       -         
+un2_sum_c_0_add17          cycloneive_lcell_comb     cout        Out     0.066     2.816       -         
+un2_sum_c_0_carry_17       Net                       -           -       0.000     -           1         
+un2_sum_c_0_add18          cycloneive_lcell_comb     cin         In      -         2.816       -         
+un2_sum_c_0_add18          cycloneive_lcell_comb     cout        Out     0.066     2.882       -         
+un2_sum_c_0_carry_18       Net                       -           -       0.000     -           1         
+un2_sum_c_0_add19          cycloneive_lcell_comb     cin         In      -         2.882       -         
+un2_sum_c_0_add19          cycloneive_lcell_comb     cout        Out     0.066     2.948       -         
+un2_sum_c_0_carry_19       Net                       -           -       0.000     -           1         
+un2_sum_c_0_add20          cycloneive_lcell_comb     cin         In      -         2.948       -         
+un2_sum_c_0_add20          cycloneive_lcell_comb     combout     Out     0.000     2.948       -         
+un2_sum_c_0_add20          Net                       -           -       0.652     -           1         
+un2_sum_c_add2             cycloneive_lcell_comb     dataa       In      -         3.600       -         
+un2_sum_c_add2             cycloneive_lcell_comb     cout        Out     0.498     4.098       -         
+un2_sum_c_carry_2          Net                       -           -       0.000     -           1         
+un2_sum_c_add3             cycloneive_lcell_comb     cin         In      -         4.098       -         
+un2_sum_c_add3             cycloneive_lcell_comb     cout        Out     0.066     4.164       -         
+un2_sum_c_carry_3          Net                       -           -       0.000     -           1         
+un2_sum_c_add4             cycloneive_lcell_comb     cin         In      -         4.164       -         
+un2_sum_c_add4             cycloneive_lcell_comb     cout        Out     0.066     4.230       -         
+un2_sum_c_carry_4          Net                       -           -       0.000     -           1         
+un2_sum_c_add5             cycloneive_lcell_comb     cin         In      -         4.230       -         
+un2_sum_c_add5             cycloneive_lcell_comb     cout        Out     0.066     4.296       -         
+un2_sum_c_carry_5          Net                       -           -       0.000     -           1         
+un2_sum_c_add6             cycloneive_lcell_comb     cin         In      -         4.296       -         
+un2_sum_c_add6             cycloneive_lcell_comb     cout        Out     0.066     4.362       -         
+un2_sum_c_carry_6          Net                       -           -       0.000     -           1         
+un2_sum_c_add7             cycloneive_lcell_comb     cin         In      -         4.362       -         
+un2_sum_c_add7             cycloneive_lcell_comb     cout        Out     0.066     4.428       -         
+un2_sum_c_carry_7          Net                       -           -       0.000     -           1         
+un2_sum_c_add8             cycloneive_lcell_comb     cin         In      -         4.428       -         
+un2_sum_c_add8             cycloneive_lcell_comb     cout        Out     0.066     4.494       -         
+un2_sum_c_carry_8          Net                       -           -       0.000     -           1         
+un2_sum_c_add9             cycloneive_lcell_comb     cin         In      -         4.494       -         
+un2_sum_c_add9             cycloneive_lcell_comb     cout        Out     0.066     4.560       -         
+un2_sum_c_carry_9          Net                       -           -       0.000     -           1         
+un2_sum_c_add10            cycloneive_lcell_comb     cin         In      -         4.560       -         
+un2_sum_c_add10            cycloneive_lcell_comb     cout        Out     0.066     4.626       -         
+un2_sum_c_carry_10         Net                       -           -       0.000     -           1         
+un2_sum_c_add11            cycloneive_lcell_comb     cin         In      -         4.626       -         
+un2_sum_c_add11            cycloneive_lcell_comb     cout        Out     0.066     4.692       -         
+un2_sum_c_carry_11         Net                       -           -       0.000     -           1         
+un2_sum_c_add12            cycloneive_lcell_comb     cin         In      -         4.692       -         
+un2_sum_c_add12            cycloneive_lcell_comb     cout        Out     0.066     4.758       -         
+un2_sum_c_carry_12         Net                       -           -       0.000     -           1         
+un2_sum_c_add13            cycloneive_lcell_comb     cin         In      -         4.758       -         
+un2_sum_c_add13            cycloneive_lcell_comb     combout     Out     0.000     4.758       -         
+un2_sum_c_add13            Net                       -           -       0.652     -           1         
+sum_RNO[31]                cycloneive_lcell_comb     datab       In      -         5.410       -         
+sum_RNO[31]                cycloneive_lcell_comb     combout     Out     0.443     5.853       -         
+sum_1_0_31__g2             Net                       -           -       0.000     -           1         
+sum[31]                    dffeas                    d           In      -         5.853       -         
+=========================================================================================================
+Total path delay (propagation time + ICD at startpoint + setup - ICD at endpoint) of 5.326 is 3.682(69.1%) logic and 1.644(30.9%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+*Arrival time includes intrinsic clock delay at start point and clock delay at startpoint
+
+
+Path information for path number 5: 
+      Requested Period:                      4.531
+    - Setup time:                            0.086
+    + Intrinsic clock delay:                 0.613
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         5.058
+
+    - Propagation time:                      5.240
+    - Intrinsic clock delay:                 0.613
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.795
+
+    Number of logic level(s):                34
+    Starting point:                          sum[0] / q
+    Ending point:                            sum[31] / d
+    The start point is clocked by            matmul|clock [rising] on pin clk
+    The end   point is clocked by            matmul|clock [rising] on pin clk
+
+Instance / Net                                       Pin         Pin               Arrival     No. of    
+Name                       Type                      Name        Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------
+sum[0]                     dffeas                    q           Out     0.232     0.845       -         
+sum[0]                     Net                       -           -       0.340     -           3         
+un2_sum_c_0_add0_0         cycloneive_lcell_comb     datab       In      -         1.185       -         
+un2_sum_c_0_add0_0         cycloneive_lcell_comb     cout        Out     0.509     1.694       -         
+un2_sum_c_0_carry_0_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add1_0         cycloneive_lcell_comb     cin         In      -         1.694       -         
+un2_sum_c_0_add1_0         cycloneive_lcell_comb     cout        Out     0.066     1.760       -         
+un2_sum_c_0_carry_1_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add2_0         cycloneive_lcell_comb     cin         In      -         1.760       -         
+un2_sum_c_0_add2_0         cycloneive_lcell_comb     cout        Out     0.066     1.826       -         
+un2_sum_c_0_carry_2_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add3_0         cycloneive_lcell_comb     cin         In      -         1.826       -         
+un2_sum_c_0_add3_0         cycloneive_lcell_comb     cout        Out     0.066     1.892       -         
+un2_sum_c_0_carry_3_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add4_0         cycloneive_lcell_comb     cin         In      -         1.892       -         
+un2_sum_c_0_add4_0         cycloneive_lcell_comb     cout        Out     0.066     1.958       -         
+un2_sum_c_0_carry_4_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add5_0         cycloneive_lcell_comb     cin         In      -         1.958       -         
+un2_sum_c_0_add5_0         cycloneive_lcell_comb     cout        Out     0.066     2.024       -         
+un2_sum_c_0_carry_5_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add6_0         cycloneive_lcell_comb     cin         In      -         2.024       -         
+un2_sum_c_0_add6_0         cycloneive_lcell_comb     cout        Out     0.066     2.090       -         
+un2_sum_c_0_carry_6_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add7_0         cycloneive_lcell_comb     cin         In      -         2.090       -         
+un2_sum_c_0_add7_0         cycloneive_lcell_comb     cout        Out     0.066     2.156       -         
+un2_sum_c_0_carry_7_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add8_0         cycloneive_lcell_comb     cin         In      -         2.156       -         
+un2_sum_c_0_add8_0         cycloneive_lcell_comb     cout        Out     0.066     2.222       -         
+un2_sum_c_0_carry_8_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add9_0         cycloneive_lcell_comb     cin         In      -         2.222       -         
+un2_sum_c_0_add9_0         cycloneive_lcell_comb     cout        Out     0.066     2.288       -         
+un2_sum_c_0_carry_9_0      Net                       -           -       0.000     -           1         
+un2_sum_c_0_add10_0        cycloneive_lcell_comb     cin         In      -         2.288       -         
+un2_sum_c_0_add10_0        cycloneive_lcell_comb     cout        Out     0.066     2.354       -         
+un2_sum_c_0_carry_10_0     Net                       -           -       0.000     -           1         
+un2_sum_c_0_add11_0        cycloneive_lcell_comb     cin         In      -         2.354       -         
+un2_sum_c_0_add11_0        cycloneive_lcell_comb     cout        Out     0.066     2.420       -         
+un2_sum_c_0_carry_11_0     Net                       -           -       0.000     -           1         
+un2_sum_c_0_add12_0        cycloneive_lcell_comb     cin         In      -         2.420       -         
+un2_sum_c_0_add12_0        cycloneive_lcell_comb     cout        Out     0.066     2.486       -         
+un2_sum_c_0_carry_12_0     Net                       -           -       0.000     -           1         
+un2_sum_c_0_add13_0        cycloneive_lcell_comb     cin         In      -         2.486       -         
+un2_sum_c_0_add13_0        cycloneive_lcell_comb     cout        Out     0.066     2.552       -         
+un2_sum_c_0_carry_13_0     Net                       -           -       0.000     -           1         
+un2_sum_c_0_add14          cycloneive_lcell_comb     cin         In      -         2.552       -         
+un2_sum_c_0_add14          cycloneive_lcell_comb     cout        Out     0.066     2.618       -         
+un2_sum_c_0_carry_14       Net                       -           -       0.000     -           1         
+un2_sum_c_0_add15          cycloneive_lcell_comb     cin         In      -         2.618       -         
+un2_sum_c_0_add15          cycloneive_lcell_comb     cout        Out     0.066     2.684       -         
+un2_sum_c_0_carry_15       Net                       -           -       0.000     -           1         
+un2_sum_c_0_add16          cycloneive_lcell_comb     cin         In      -         2.684       -         
+un2_sum_c_0_add16          cycloneive_lcell_comb     cout        Out     0.066     2.750       -         
+un2_sum_c_0_carry_16       Net                       -           -       0.000     -           1         
+un2_sum_c_0_add17          cycloneive_lcell_comb     cin         In      -         2.750       -         
+un2_sum_c_0_add17          cycloneive_lcell_comb     cout        Out     0.066     2.816       -         
+un2_sum_c_0_carry_17       Net                       -           -       0.000     -           1         
+un2_sum_c_0_add18          cycloneive_lcell_comb     cin         In      -         2.816       -         
+un2_sum_c_0_add18          cycloneive_lcell_comb     cout        Out     0.066     2.882       -         
+un2_sum_c_0_carry_18       Net                       -           -       0.000     -           1         
+un2_sum_c_0_add19          cycloneive_lcell_comb     cin         In      -         2.882       -         
+un2_sum_c_0_add19          cycloneive_lcell_comb     cout        Out     0.066     2.948       -         
+un2_sum_c_0_carry_19       Net                       -           -       0.000     -           1         
+un2_sum_c_0_add20          cycloneive_lcell_comb     cin         In      -         2.948       -         
+un2_sum_c_0_add20          cycloneive_lcell_comb     cout        Out     0.066     3.014       -         
+un2_sum_c_0_carry_20       Net                       -           -       0.000     -           1         
+un2_sum_c_0_add21          cycloneive_lcell_comb     cin         In      -         3.014       -         
+un2_sum_c_0_add21          cycloneive_lcell_comb     combout     Out     0.000     3.014       -         
+un2_sum_c_0_add21          Net                       -           -       0.652     -           1         
+un2_sum_c_add3             cycloneive_lcell_comb     dataa       In      -         3.666       -         
+un2_sum_c_add3             cycloneive_lcell_comb     cout        Out     0.498     4.164       -         
+un2_sum_c_carry_3          Net                       -           -       0.000     -           1         
+un2_sum_c_add4             cycloneive_lcell_comb     cin         In      -         4.164       -         
+un2_sum_c_add4             cycloneive_lcell_comb     cout        Out     0.066     4.230       -         
+un2_sum_c_carry_4          Net                       -           -       0.000     -           1         
+un2_sum_c_add5             cycloneive_lcell_comb     cin         In      -         4.230       -         
+un2_sum_c_add5             cycloneive_lcell_comb     cout        Out     0.066     4.296       -         
+un2_sum_c_carry_5          Net                       -           -       0.000     -           1         
+un2_sum_c_add6             cycloneive_lcell_comb     cin         In      -         4.296       -         
+un2_sum_c_add6             cycloneive_lcell_comb     cout        Out     0.066     4.362       -         
+un2_sum_c_carry_6          Net                       -           -       0.000     -           1         
+un2_sum_c_add7             cycloneive_lcell_comb     cin         In      -         4.362       -         
+un2_sum_c_add7             cycloneive_lcell_comb     cout        Out     0.066     4.428       -         
+un2_sum_c_carry_7          Net                       -           -       0.000     -           1         
+un2_sum_c_add8             cycloneive_lcell_comb     cin         In      -         4.428       -         
+un2_sum_c_add8             cycloneive_lcell_comb     cout        Out     0.066     4.494       -         
+un2_sum_c_carry_8          Net                       -           -       0.000     -           1         
+un2_sum_c_add9             cycloneive_lcell_comb     cin         In      -         4.494       -         
+un2_sum_c_add9             cycloneive_lcell_comb     cout        Out     0.066     4.560       -         
+un2_sum_c_carry_9          Net                       -           -       0.000     -           1         
+un2_sum_c_add10            cycloneive_lcell_comb     cin         In      -         4.560       -         
+un2_sum_c_add10            cycloneive_lcell_comb     cout        Out     0.066     4.626       -         
+un2_sum_c_carry_10         Net                       -           -       0.000     -           1         
+un2_sum_c_add11            cycloneive_lcell_comb     cin         In      -         4.626       -         
+un2_sum_c_add11            cycloneive_lcell_comb     cout        Out     0.066     4.692       -         
+un2_sum_c_carry_11         Net                       -           -       0.000     -           1         
+un2_sum_c_add12            cycloneive_lcell_comb     cin         In      -         4.692       -         
+un2_sum_c_add12            cycloneive_lcell_comb     cout        Out     0.066     4.758       -         
+un2_sum_c_carry_12         Net                       -           -       0.000     -           1         
+un2_sum_c_add13            cycloneive_lcell_comb     cin         In      -         4.758       -         
+un2_sum_c_add13            cycloneive_lcell_comb     combout     Out     0.000     4.758       -         
+un2_sum_c_add13            Net                       -           -       0.652     -           1         
+sum_RNO[31]                cycloneive_lcell_comb     datab       In      -         5.410       -         
+sum_RNO[31]                cycloneive_lcell_comb     combout     Out     0.443     5.853       -         
+sum_1_0_31__g2             Net                       -           -       0.000     -           1         
+sum[31]                    dffeas                    d           In      -         5.853       -         
+=========================================================================================================
+Total path delay (propagation time + ICD at startpoint + setup - ICD at endpoint) of 5.326 is 3.682(69.1%) logic and 1.644(30.9%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+*Arrival time includes intrinsic clock delay at start point and clock delay at startpoint
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 123MB peak: 126MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 123MB peak: 126MB)
+
+##### START OF AREA REPORT #####[
+Design view:work.matmul(verilog)
+Selecting part EP4CE6E22A7
+@N: FA174 |The following device usage report estimates place and route data. Please look at the place and route report for final resource usage.
+
+Total combinational functions 228 of 6272 ( 3%)
+Logic element usage by number of inputs
+		  4 input functions 	 22
+		  3 input functions 	 66
+		  <=2 input functions 	 140
+Logic elements by mode
+		  normal mode            161
+		  arithmetic mode        67
+Total registers 57 of 6272 ( 0%)
+I/O pins 137 of 180 (76%), total I/O based on largest package of this part.
+
+Number of I/O registers
+			Input DDRs    :0
+			Output DDRs   :0
+
+DSP.Simple_Multipliers_18_bit: 3
+DSP Blocks:     3  (6 nine-bit DSP elements).
+DSP Utilization: 20.00% of available 15 blocks (30 nine-bit).
+ShiftTap:       0  (0 registers)
+Ena:             18
+Sload:           32
+Sclr:            10
+Total ESB:      0 bits 
+
+##### END OF AREA REPORT #####]
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 25MB peak: 126MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Jan 18 04:38:00 2023
+
+###########################################################]

@@ -1,0 +1,25 @@
+@N:: Applying property .distcompmodetop with value 1 on module matmul in library work
+@N:: Applying property .distcompnoprune with value 1 on module matmul in library work
+@N:: Applying property .noprune with value 1 on module matmul in library work
+Selecting top level module matmul
+@N: CG364 :"/home/gfa2226/fpga/matmul/matmul.sv":1:7:1:12|Synthesizing module matmul in library work.
+Running optimization stage 1 on matmul .......
+Running optimization stage 2 on matmul .......
+@W: CL190 :"/home/gfa2226/fpga/matmul/matmul.sv":29:0:29:8|Optimizing register bit k[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gfa2226/fpga/matmul/matmul.sv":29:0:29:8|Optimizing register bit i[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gfa2226/fpga/matmul/matmul.sv":29:0:29:8|Optimizing register bit j[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"/home/gfa2226/fpga/matmul/matmul.sv":29:0:29:8|Pruning register bit 3 of j[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"/home/gfa2226/fpga/matmul/matmul.sv":29:0:29:8|Pruning register bit 3 of i[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"/home/gfa2226/fpga/matmul/matmul.sv":29:0:29:8|Pruning register bit 3 of k[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL201 :"/home/gfa2226/fpga/matmul/matmul.sv":29:0:29:8|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 4 reachable states with original encodings of:
+   00
+   01
+   10
+   11
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/gfa2226/fpga/matmul/syn/rev_2/synwork//distcomp/distcomp0/distcomp0.rt.csv
+

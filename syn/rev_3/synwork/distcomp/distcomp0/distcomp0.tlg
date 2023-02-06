@@ -1,0 +1,49 @@
+@N:: Applying property .distcompmodetop with value 1 on module matmul_top in library work
+@N:: Applying property .distcompnoprune with value 1 on module matmul_top in library work
+@N:: Applying property .noprune with value 1 on module matmul_top in library work
+Selecting top level module matmul_top
+@E: CG389 :"/home/gfa2226/fpga/matmul/matmul_top.sv":39:2:39:12|Reference to undefined module matmul
+@E: CG389 :"/home/gfa2226/fpga/matmul/matmul_top.sv":56:2:56:7|Reference to undefined module bram
+@E: CG389 :"/home/gfa2226/fpga/matmul/matmul_top.sv":68:2:68:7|Reference to undefined module bram
+@E: CG389 :"/home/gfa2226/fpga/matmul/matmul_top.sv":80:2:80:7|Reference to undefined module bram
+@N: CG364 :"/home/gfa2226/fpga/matmul/matmul_top.sv":1:7:1:16|Synthesizing module matmul_top in library work.
+@W: CG141 :"/home/gfa2226/fpga/matmul/matmul_top.sv":39:2:39:12|Creating black box for matmul
+Making port clock a bidir
+Making port reset a bidir
+Making port start a bidir
+Making port done a bidir
+Making port x_dout a bidir
+Making port x_addr a bidir
+Making port y_dout a bidir
+Making port y_addr a bidir
+Making port z_din a bidir
+Making port z_addr a bidir
+Making port z_wr_en a bidir
+@W: CG141 :"/home/gfa2226/fpga/matmul/matmul_top.sv":56:2:56:7|Creating black box for bram
+Making port clock a bidir
+Making port rd_addr a bidir
+Making port wr_addr a bidir
+Making port wr_en a bidir
+Making port dout a bidir
+Making port din a bidir
+@W: CG141 :"/home/gfa2226/fpga/matmul/matmul_top.sv":68:2:68:7|Creating black box for bram
+Making port clock a bidir
+Making port rd_addr a bidir
+Making port wr_addr a bidir
+Making port wr_en a bidir
+Making port dout a bidir
+Making port din a bidir
+@W: CG141 :"/home/gfa2226/fpga/matmul/matmul_top.sv":80:2:80:7|Creating black box for bram
+Making port clock a bidir
+Making port rd_addr a bidir
+Making port wr_addr a bidir
+Making port wr_en a bidir
+Making port dout a bidir
+Making port din a bidir
+Running optimization stage 1 on matmul_top .......
+Running optimization stage 2 on matmul_top .......
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/gfa2226/fpga/matmul/syn/rev_3/synwork//distcomp/distcomp0/distcomp0.rt.csv
+

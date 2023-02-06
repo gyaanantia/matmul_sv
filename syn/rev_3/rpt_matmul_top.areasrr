@@ -1,0 +1,188 @@
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify (R) Premier
+Build: O-2018.09-SP1
+Install: /vol/synopsys/fpga/O-2018.09-SP1
+OS: Red Hat Enterprise Linux 8.7 (Ootpa)
+Hostname: joker.ece.northwestern.edu
+max virtual memory: unlimited (bytes)
+max user processes: 62381
+max stack size: 8388608 (bytes)
+
+
+Implementation : rev_3
+
+#### START OF AREA REPORT #####[
+
+Part:			EP4CE6EA22-7 (Altera)
+
+--------------------------------------------------------------------------
+########   Utilization report for  Top level view:   matmul_top   ########
+==========================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     146                100 %                
+======================================================
+Total SEQUENTIAL ATOMS in the block matmul_top:	146 (25.35 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     244                100 %                
+==================================================
+Total COMBINATIONAL ATOMS in the block matmul_top:	244 (42.36 % Utilization)
+
+
+RAMS
+Name          Total elements     Number of bits     Utilization     Notes
+-------------------------------------------------------------------------
+SYNC RAMS     3                  6144               100 %                
+=========================================================================
+Total RAMS in the block matmul_top:	3 (0.52 % Utilization)
+
+
+DSPs
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+MACs     6                  100 %                
+=================================================
+Total DSPs in the block matmul_top:	6 (1.04 % Utilization)
+
+
+Black Boxes
+Name            Total elements     Utilization     Notes
+--------------------------------------------------------
+BLACK BOXES     3                  100 %                
+========================================================
+Total Black Boxes in the block matmul_top:	3 (0.52 % Utilization)
+
+-----------------------------------------------------------------
+########   Utilization report for  cell:   bram_6s_32s   ########
+Instance path:   matmul_top.bram_6s_32s                          
+=================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     34                 23.3 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block matmul_top.bram_6s_32s:	34 (5.90 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     8                  3.28 %               
+==================================================
+Total COMBINATIONAL ATOMS in the block matmul_top.bram_6s_32s:	8 (1.39 % Utilization)
+
+
+RAMS
+Name          Total elements     Number of bits     Utilization     Notes
+-------------------------------------------------------------------------
+SYNC RAMS     1                  2048               33.3 %               
+=========================================================================
+Total RAMS in the block matmul_top.bram_6s_32s:	1 (0.17 % Utilization)
+
+-------------------------------------------------------------------
+########   Utilization report for  cell:   bram_6s_32s_0   ########
+Instance path:   matmul_top.bram_6s_32s_0                          
+===================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     34                 23.3 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block matmul_top.bram_6s_32s_0:	34 (5.90 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     4                  1.64 %               
+==================================================
+Total COMBINATIONAL ATOMS in the block matmul_top.bram_6s_32s_0:	4 (0.69 % Utilization)
+
+
+RAMS
+Name          Total elements     Number of bits     Utilization     Notes
+-------------------------------------------------------------------------
+SYNC RAMS     1                  2048               33.3 %               
+=========================================================================
+Total RAMS in the block matmul_top.bram_6s_32s_0:	1 (0.17 % Utilization)
+
+-------------------------------------------------------------------
+########   Utilization report for  cell:   bram_6s_32s_1   ########
+Instance path:   matmul_top.bram_6s_32s_1                          
+===================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     34                 23.3 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block matmul_top.bram_6s_32s_1:	34 (5.90 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     36                 14.8 %               
+==================================================
+Total COMBINATIONAL ATOMS in the block matmul_top.bram_6s_32s_1:	36 (6.25 % Utilization)
+
+
+RAMS
+Name          Total elements     Number of bits     Utilization     Notes
+-------------------------------------------------------------------------
+SYNC RAMS     1                  2048               33.3 %               
+=========================================================================
+Total RAMS in the block matmul_top.bram_6s_32s_1:	1 (0.17 % Utilization)
+
+-------------------------------------------------------------------------
+########   Utilization report for  cell:   matmul_32s_6s_8s_3s   ########
+Instance path:   matmul_top.matmul_32s_6s_8s_3s                          
+=========================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     44                 30.1 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block matmul_top.matmul_32s_6s_8s_3s:	44 (7.64 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     196                80.3 %               
+==================================================
+Total COMBINATIONAL ATOMS in the block matmul_top.matmul_32s_6s_8s_3s:	196 (34.03 % Utilization)
+
+
+DSPs
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+MACs     6                  100 %                
+=================================================
+Total DSPs in the block matmul_top.matmul_32s_6s_8s_3s:	6 (1.04 % Utilization)
+
+
+Black Boxes
+Name            Total elements     Utilization     Notes
+--------------------------------------------------------
+BLACK BOXES     3                  100 %                
+========================================================
+Total Black Boxes in the block matmul_top.matmul_32s_6s_8s_3s:	3 (0.52 % Utilization)
+
+
+##### END OF AREA REPORT #####]
+

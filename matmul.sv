@@ -1,9 +1,9 @@
 module matmul
 #(
     parameter DATA_WIDTH = 32,
-    parameter ADDR_WIDTH = 12,
-    parameter VECTOR_SIZE = 64,
-    parameter IDX_SIZE = 6
+    parameter ADDR_WIDTH = 6,
+    parameter VECTOR_SIZE = 8,
+    parameter IDX_SIZE = 3
 )
 (
     input   logic                   clock,
@@ -85,7 +85,7 @@ always_comb begin
             end else begin
                 state_c = s2;
             end
-            
+
             x_addr = ($unsigned(i_c) * $unsigned(VECTOR_SIZE)) + $unsigned(k_c);
             y_addr = ($unsigned(k_c) * $unsigned(VECTOR_SIZE)) + $unsigned(j_c);
         end

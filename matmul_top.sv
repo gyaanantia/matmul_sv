@@ -1,8 +1,8 @@
 module matmul_top
 #(
     parameter DATA_WIDTH = 32,
-    parameter ADDR_WIDTH = 12,
-    parameter VECTOR_SIZE = 64
+    parameter ADDR_WIDTH = 6,
+    parameter VECTOR_SIZE = 8
 )
 (
     input logic                     clock,

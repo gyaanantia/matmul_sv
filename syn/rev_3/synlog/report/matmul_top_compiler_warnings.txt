@@ -1,0 +1,10 @@
+@W: BN666 :"/home/gfa2226/fpga/matmul/matmul_top.sv":80:2:80:7|Unlinked cross language instance z_inst 
+@W: BN666 :"/home/gfa2226/fpga/matmul/matmul_top.sv":68:2:68:7|Unlinked cross language instance y_inst 
+@W: BN666 :"/home/gfa2226/fpga/matmul/matmul_top.sv":56:2:56:7|Unlinked cross language instance x_inst 
+@W: BN666 :"/home/gfa2226/fpga/matmul/matmul_top.sv":39:2:39:12|Unlinked cross language instance matmul_inst 
+@W:: Distributed compilation : All files are passed to distribution points
+@W: BN666 :"/home/gfa2226/fpga/matmul/matmul_top.sv":39:2:39:12|Unlinked cross language instance matmul_inst 
+@W: BN666 :"/home/gfa2226/fpga/matmul/matmul_top.sv":56:2:56:7|Unlinked cross language instance x_inst 
+@W: BN666 :"/home/gfa2226/fpga/matmul/matmul_top.sv":68:2:68:7|Unlinked cross language instance y_inst 
+@W: BN666 :"/home/gfa2226/fpga/matmul/matmul_top.sv":80:2:80:7|Unlinked cross language instance z_inst 
+

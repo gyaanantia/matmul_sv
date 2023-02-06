@@ -1,0 +1,5 @@
+@E: CG389 :"/home/gfa2226/fpga/matmul/matmul_top.sv":39:2:39:12|Reference to undefined module matmul
+@E: CG389 :"/home/gfa2226/fpga/matmul/matmul_top.sv":56:2:56:7|Reference to undefined module bram
+@E: CG389 :"/home/gfa2226/fpga/matmul/matmul_top.sv":68:2:68:7|Reference to undefined module bram
+@E: CG389 :"/home/gfa2226/fpga/matmul/matmul_top.sv":80:2:80:7|Reference to undefined module bram
+
